@@ -1,0 +1,345 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4e2265d2-6a01-4c79-9ea8-12cdabe98bdb" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+      </path>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="postgres@localhost" type="feb32156:DbDataSourceImpl" />
+        <item name="databases" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="postgres: database" type="162271b6:PgImplModel$Database" />
+        <item name="schemas" type="d4e8921:DatabaseStructure$FamilyGroup" />
+        <item name="public: schema" type="983ebcf7:PgImplModel$Schema" />
+        <item name="bhacklogins: table" type="69fad909:PgImplModel$LocalTable" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ExecutionTargetDialog">
+    <checked>
+      <node key="40d2c543-5b0a-434d-a4c5-5b91845a98d4">
+        <node key="best_hack">
+          <node key="public" />
+        </node>
+      </node>
+    </checked>
+    <expanded>
+      <node key="40d2c543-5b0a-434d-a4c5-5b91845a98d4">
+        <node key="best_hack" />
+        <node key="postgres" />
+      </node>
+    </expanded>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Flask Main" />
+        <option value="Python Script" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1YwgIN1VMv9NMvfIYNDgRTya2NW" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DatabaseDriversLRU" value="postgresql" />
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Downloads/temp" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunManager" selected="Python.main">
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="best_hack2020" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="os_scripts" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="best_hack2020" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/os_scripts.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="test" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+      <module name="best_hack2020" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/test.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="best_hack2020" type="Python.FlaskServer">
+      <module name="best_hack2020" />
+      <option name="target" value="$PROJECT_DIR$/app.py" />
+      <option name="targetType" value="PATH" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="IS_MODULE_SDK" value="false" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="launchJavascriptDebuger" value="false" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.test" />
+        <item itemvalue="Python.os_scripts" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="postgres@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="postgres@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@3e8d17f2" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+              <path>
+                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+                <item name="postgres@localhost: root" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+                <item name="com.intellij.database.console.session.MessageBusSession@75c65f3" type="9fbbdea:ServiceModel$ServiceNode" />
+              </path>
+            </expand>
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4e2265d2-6a01-4c79-9ea8-12cdabe98bdb" name="Default Changelist" comment="" />
+      <created>1583858989427</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1583858989427</updated>
+      <workItem from="1583859013176" duration="238000" />
+      <workItem from="1583859259894" duration="17928000" />
+      <workItem from="1583944962975" duration="27722000" />
+      <workItem from="1584002989687" duration="20993000" />
+      <workItem from="1584039137347" duration="23280000" />
+      <workItem from="1584080270037" duration="12173000" />
+      <workItem from="1584112338813" duration="1191000" />
+      <workItem from="1584179256086" duration="64000" />
+      <workItem from="1584260638424" duration="7000" />
+      <workItem from="1584271743601" duration="73000" />
+      <workItem from="1586251325573" duration="2014000" />
+      <workItem from="1586254365280" duration="1545000" />
+      <workItem from="1586446385990" duration="570000" />
+      <workItem from="1586513504034" duration="2783000" />
+      <workItem from="1586860764333" duration="2723000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="722" y="80" key="#SQL_Dialects" timestamp="1583947727043">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="722" y="80" key="#SQL_Dialects/0.0.1536.834@0.0.1536.834" timestamp="1583947727043" />
+    <state x="105" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586513630111">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="84" y="69" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.834@0.0.1536.834" timestamp="1583873445750" />
+    <state x="105" y="86" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586513630111" />
+    <state x="499" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584042455460">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="499" y="165" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.834@0.0.1536.834" timestamp="1584042455460" />
+    <state x="243" y="223" key="ExecutionTargetDialog" timestamp="1583869715365">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="243" y="223" key="ExecutionTargetDialog/0.0.1536.834@0.0.1536.834" timestamp="1583869715365" />
+    <state x="740" y="275" key="FileChooserDialogImpl" timestamp="1586254893587">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="740" y="275" key="FileChooserDialogImpl/0.0.1920.1040@0.0.1920.1040" timestamp="1586254893587" />
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom" timestamp="1586516343495">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="232" key="GridCell.Tab.0.bottom/0.0.1536.834@0.0.1536.834" timestamp="1584113739324" />
+    <state width="1877" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1586516343495" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center" timestamp="1586516343492">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="232" key="GridCell.Tab.0.center/0.0.1536.834@0.0.1536.834" timestamp="1584113739324" />
+    <state width="1877" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1586516343492" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left" timestamp="1586516343492">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="232" key="GridCell.Tab.0.left/0.0.1536.834@0.0.1536.834" timestamp="1584113739324" />
+    <state width="1877" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1586516343492" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right" timestamp="1586516343494">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1493" height="232" key="GridCell.Tab.0.right/0.0.1536.834@0.0.1536.834" timestamp="1584113739324" />
+    <state width="1877" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1586516343494" />
+    <state width="1493" height="184" key="GridCell.Tab.1.bottom" timestamp="1584092869247">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="184" key="GridCell.Tab.1.bottom/0.0.1536.834@0.0.1536.834" timestamp="1584092869247" />
+    <state width="1493" height="184" key="GridCell.Tab.1.center" timestamp="1584092869247">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="184" key="GridCell.Tab.1.center/0.0.1536.834@0.0.1536.834" timestamp="1584092869247" />
+    <state width="1493" height="184" key="GridCell.Tab.1.left" timestamp="1584092869247">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="184" key="GridCell.Tab.1.left/0.0.1536.834@0.0.1536.834" timestamp="1584092869247" />
+    <state width="1493" height="184" key="GridCell.Tab.1.right" timestamp="1584092869247">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="1493" height="184" key="GridCell.Tab.1.right/0.0.1536.834@0.0.1536.834" timestamp="1584092869247" />
+    <state width="195" height="457" key="HiddenNamespacesPopup" timestamp="1583873891315">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state width="195" height="457" key="HiddenNamespacesPopup/0.0.1536.834@0.0.1536.834" timestamp="1583873891315" />
+    <state x="346" y="76" key="SettingsEditor" timestamp="1586514761469">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="277" y="61" key="SettingsEditor/0.0.1536.834@0.0.1536.834" timestamp="1583869542358" />
+    <state x="346" y="76" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1586514761469" />
+    <state x="645" y="295" width="322" height="358" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1" timestamp="1584029339105">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="645" y="295" width="322" height="358" key="com.intellij.database.actions.DdlActions$DeleteProvider2$1/0.0.1536.834@0.0.1536.834" timestamp="1584029339105" />
+    <state x="566" y="242" width="403" height="348" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog" timestamp="1584055134203">
+      <screen x="0" y="0" width="1536" height="834" />
+    </state>
+    <state x="566" y="242" width="403" height="348" key="com.intellij.database.psi.DbRenamePsiElementProcessor.DbRenameDialog/0.0.1536.834@0.0.1536.834" timestamp="1584055134203" />
+    <state x="606" y="75" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog" timestamp="1586252872921">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="485" y="60" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1536.834@0.0.1536.834" timestamp="1584059277612" />
+    <state x="606" y="75" key="com.intellij.database.view.ui.AbstractDbRefactoringDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586252872921" />
+    <state x="818" y="266" key="com.intellij.database.view.ui.DbObjectDialog" timestamp="1586252929312">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="818" y="266" key="com.intellij.database.view.ui.DbObjectDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1586252929312" />
+    <state x="498" y="142" width="925" height="756" key="find.popup" timestamp="1586515722048">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="398" y="114" width="740" height="606" key="find.popup/0.0.1536.834@0.0.1536.834" timestamp="1584029670772" />
+    <state x="498" y="142" width="925" height="756" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1586515722048" />
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/best_hack2020$main.coverage" NAME="main Coverage Results" MODIFIED="1586514779414" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/best_hack2020$test.coverage" NAME="test Coverage Results" MODIFIED="1584039609775" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/best_hack2020$os_scripts.coverage" NAME="os_scripts Coverage Results" MODIFIED="1584004273611" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
+</project>

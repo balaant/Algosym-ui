@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/static/style/style.css">
+    </head>
+    <body>  
+        <form action="" method="post">
+             <div class="container">
+                 <span id="head-txt">MHJavaCode</span>
+                 <input id="login"  name="login" placeholder="E-mail" class="form" required>
+                 <label for="password"></label>
+                 <input id="password" name="password" placeholder="Пароль" type="password" required>
+                 <input value="Войти" type="submit" id="btn-singin">
+                 <span id="reg">Еще не зарегестрированны? <a href="/register">Регистрация</a></span>
+             </div>
+        </form>
+
+        <span id="E-mail_hint">E-mail</span>
+        <span id="Password_hint">Пароль</span>
+        <img class="btn-eye" id="btn-show" type ="checkbox" src="/static/image/show.png" alt="cl-eye">
+        <img class="btn-eye" id="btn-notshow" type ="checkbox" src="/static/image/notshow.png" alt="eye-nt">
+    </body>
+    
+    <script type="text/javascript" src="/static/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/script.js"></script>
+</html>

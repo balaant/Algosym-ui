@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="/static/style/regstyle.css">
+    </head>
+    <Body>  
+        <form action="" method="post">
+             <div class="container">
+                 <span id="head-txt">MHJavaCode</span>
+                 <input id="login" name="login" type="text" placeholder="Ваш логин/e-mail" class="form" required>
+                 <input id="password" name="password" placeholder="Пароль"  type="password" required>
+                 <input id="copypassword" name="copypassword" placeholder="Повторите пароль"  type="password" required>
+                 <input value="Зарегистрироваться"  name="button_subm" type="submit" id="btn-singup">
+                 <span id="reg">Уже зарегестрированны? <a href="/login">Авторизация</a></span>
+             </div>
+        </form>
+        <span id="E-mail_hint">Ваш логин/e-mail</span>
+        <span id="Password_hint">Пароль</span>
+        <span id="Copypassword_hint">Повторите пароль</span>
+        <img class="btn-eye" id="btn-show" type ="checkbox" src="/static/image/show.png">
+        <img class="btn-eye" id="btn-notshow" type ="checkbox" src="/static/image/notshow.png">
+        <img class="btn-eye-copy" id="btn-show-copy" type ="checkbox" src="/static/image/show.png">
+        <img class="btn-eye-copy" id="btn-notshow-copy" type ="checkbox" src="/static/image/notshow.png">
+    </Body>
+    {% include "message.html" %}
+    <script type="text/javascript" src="/static/node_modules/jquery/dist/jquery.min.js"></script>
+    <script type="text/javascript" src="/static/regscript.js"></script>
+</html>

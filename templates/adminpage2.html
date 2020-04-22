@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/style/adminpage2style.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <nav class="adm-nav">
+            <div class="adm-st">
+                <a href="/mainPage">Управление системой</a>
+            </div>
+            <div class="adm-bd">
+                <a href="/mainPage/storage">Управление хранилищем</a>                </div>
+        </nav>
+        <div class="full-page">
+            <div class="column1">
+                <form class="users-space-select" method="get">
+                    <center><p id="user-header">Пользователи</p></center>
+                    {% block users %}
+                    {% endblock %}
+                </form>
+
+                <form class="user-permission">
+                <center><p id="user-header">Настройки</p></center>
+                <p class="user-prop"><span>Права:</span><select class="slct-txt"><option class="slct-txt">Пользователь</option><option class="slct-txt">Администратор</option></select></p>
+                <p class="user-prop"><span>Блокировать</span><button class="btn-flag" >Нет</button></p>
+                <p class="user-prop"><span>Удалить</span><button class="btn-flag">Нет</button></p>
+                <center><p><button id="btn-submit"><span>Применить</span></button></p></center>
+
+                </form>
+                <div class="admin-login">
+                    <p><img id="admin-login-img" src="/static/image/star.png"><span id="admin-login-str">user@gmail.com</span></p>
+                </div>
+            </div>
+            <div class="column2">
+                <form class="selected-alg-code" method="post">
+                    <center>
+                        <div class="alg-prop-panel">
+                            <img class="alg-img" src="/static/image/alg.png" height="40px" width="40px">
+                            <input class="alg-name" type="text" value="{% block fname %}{% endblock %}">
+                            <button id="delet-alg" name = "del_storage" type="submit">удалить</button>
+                        </div>
+                    </center>
+                    <textarea name="" id="current-alg-code" cols="30" rows="10">{% block read_bytes %}{% endblock %}</textarea>
+            
+                </form>
+                <form class="algaritm-space-select" method="get">
+                    <center><p id="alg-header">Алгоритмы</p></center>
+                    {% block user_algs %}
+                    {% endblock %}
+                </form>
+            </div>
+        </div>
+        
+    </body>
+    <script type="text/javascript" src="/static/node_modules/jquery/dist/jquery.min.js"></script>
+</html>

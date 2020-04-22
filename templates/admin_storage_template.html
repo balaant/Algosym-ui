@@ -1,0 +1,22 @@
+{% extends "adminpage2.html" %}
+{% block users %}
+    {% for login in render_login %}
+
+            <p class="user-element"><img class="user-element-img" src="/static/image/persone.png" height="15px" width="15px">
+                <input class="user-element-str" type="submit" value="{{ login }}" name="{{ login }}"></p>
+
+    {% endfor %}
+{% endblock %}
+
+{% block user_algs %}
+    {% for arguments in ld %}
+        <p class="alg-element"><img class="alg-element-img" src="/static/image/alg.png" height="15px" width="15px">
+        <input class = "alg-element-str" type="submit" name={{ arguments }} value={{ arguments }}></p>
+
+    {% endfor %}
+
+{% endblock %}
+
+{% block read_bytes %}{{ read_file }}{% endblock %}
+
+{% block fname %}{{ fname }}{% endblock %}

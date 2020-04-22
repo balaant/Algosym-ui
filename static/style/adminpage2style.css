@@ -1,0 +1,434 @@
+body{
+    background: #44434F;
+}
+.full-page{
+    min-width: 1200px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+}
+.column1{
+    position: relative;
+    display:  flex;
+    flex-direction: column;
+    height: 100%;
+    width: 30%;
+}
+.column2{
+    position: relative;
+    display:  flex;
+    flex-direction: column;
+    height: 100%;
+    width: 70%;
+}
+
+.adm-nav{
+    position: relative;
+    width:100%;
+    height:100px;
+    display: flex;
+
+}
+
+.adm-st{
+    position: relative;
+    width: 536px;
+    height: 50px;
+    top:37px;
+    left: calc( 50% - 536px );
+    text-align: center;
+    display: inline-block;
+
+
+
+
+    background: #37373A;
+    border: 1px solid #000000;
+    box-sizing: border-box;
+    border-radius: 30px 0px 0px 30px;
+}
+
+.adm-st a{
+    position: relative;
+    top:7px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    text-decoration: none;
+    
+
+    color: #ABABC1;
+}
+
+.adm-bd{
+    position: absolute;
+    width: 536px;
+    height: 50px;
+    top: 37px;
+    left: 50%;
+    text-align: center;
+    display: inline-block;
+
+
+    background: #878792;
+    border: 1px solid #F8EEEE;
+    box-sizing: border-box;
+    border-radius: 0px 30px 30px 0px;
+}
+
+.adm-bd a{
+    position: relative;
+    top:7px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    text-decoration: none;
+    
+
+    color: #DADAE1;
+}
+
+
+
+
+
+::-webkit-scrollbar{
+    width: 30px;
+}
+.alg-nav::-webkit-scrollbar-track{
+    width: 5px;
+    background:  #403E4F;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    width: 5px;
+    background:  #44434F;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    width:10px;
+    border-radius: 15px;
+    background: #37373A;
+    border: 1px solid #DADAE1;
+}
+.users-space-select{
+    position:relative;
+    height:250px;
+    min-width: 350px;
+
+    margin-top:25px;
+    margin-left: 100px;
+    margin-right: 50px;
+
+    background-color: black;
+    border-radius: 10px;
+
+    overflow: auto;
+
+}
+#user-header{
+    margin-top: 7px;
+    margin-bottom: 0px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background-color: gray;
+}
+.user-element{
+    margin: 6px;
+    margin-top: 10px;
+
+    display: block;  
+}
+
+
+
+.user-element-img{
+    position: relative;
+    vertical-align: middle;
+    top:-2px;
+}
+
+.user-element-str{
+    padding-left: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background:none;
+    border: none;
+}
+.user-permission{
+    position: relative;
+    height:255px;
+    min-width: 350px;
+
+    margin-top:25px;
+    margin-left: 100px;
+    margin-right: 100px;
+
+    background: black;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+}
+
+.user-prop{
+    margin: 6px;
+    margin-top: 20px;
+    background-color: black;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.user-prop span{
+    border:none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+.slct-txt{
+    position: relative;
+    top:-5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    color: white;
+    background-color: black;
+}
+.btn-flag{
+    position: relative;
+    width: 90px;
+    height: 30px;
+    top:-5px;
+    cursor: pointer;
+    font-size: 18px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    color: #DADAE1;
+
+    background: #9D9DBD;
+    border: 2px solid #3F3F44;
+    box-sizing: border-box;
+    border-radius: 30px;
+    vertical-align: middle;
+    outline: none;
+}
+
+#btn-submit{
+    height: 35px;
+    background: #9D9DBD;
+    border: 2px solid #3F3F44;
+    box-sizing: border-box;
+    border-radius: 50px;
+    outline: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    align-items: center;
+    text-align: center;
+    color: #DADAE1;
+}
+
+
+
+.admin-login{
+    margin-left: 100px;
+    display: inline-block;
+}
+#admin-login-str{
+    padding-left: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+#admin-login-img{
+    position: relative;
+    vertical-align: middle;
+    top:-5px;
+}
+
+.selected-alg-code{
+    position: relative;
+    width: 90%;
+    height: 350px;
+
+    margin-top:25px;
+    margin-left:25px;
+
+    background:gray;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color:#FFFFFF;
+
+    resize: none;
+}
+
+.alg-prop-panel{
+    position: relative;
+    margin-top: 2px;
+    margin-bottom: 2px;
+    border-radius: 10px;
+}
+
+.alg-img{
+    position: relative;
+    vertical-align: middle;
+    top:-2px;
+
+    display: inline;
+
+    margin-left: 10px;
+}
+
+.alg-name{
+    background-color:gray;
+    border:none;
+    display: inline;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+#delet-alg{
+    position: relative;
+    width: 250px;
+    height: 50px;
+
+    vertical-align: middle;
+
+    margin-left: 200px;
+
+   
+
+    background: #CA8181;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    align-items: center;
+    text-align: center;
+    
+    color: #FEC8C8;
+}
+#current-alg-code{
+    width: 98%;
+    height: 280px;
+    outline: none;
+    border: none;
+    display: block;
+
+    margin-left:2px;
+    padding-top:10px;
+    padding-left: 10px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    color:#FFFFFF;
+    background-color: black;
+    border-radius: 10px;
+
+    overflow: auto;
+    resize: none;
+}
+.algaritm-space-select{
+    position:relative;
+    height: 200px;
+    width: 90%;
+
+    margin-top:25px;
+    margin-left:25px;
+
+    background-color:#000000;
+    border-radius: 10px;
+
+    overflow: auto;
+}
+#alg-header{
+    margin-top: 7px;
+    margin-bottom: 0px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background-color:gray;
+}
+.alg-element{
+    margin: 6px;
+    margin-top: 10px;
+
+    display: inline-block;  
+}
+
+.alg-element-img{
+    position: relative;
+    vertical-align: middle;
+    top:-2px;
+}
+
+.alg-element-str{
+    padding-left: 5px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    color: #FFFFFF;
+    background-color: black;
+    border: none;
+}
+
+
+
+
+
+
+
+
+

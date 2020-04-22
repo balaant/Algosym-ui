@@ -1,0 +1,24 @@
+{% extends "page.html" %}
+
+{% block content  %}
+    {% for post in ld %}
+        <div class = "alg-sp">
+            <img src="/static/image/alg.png"  class="alg-sp" alt="alg">
+            <input class="alg-sp" id="alg" name = "{{ post }}" value="{{ post }}" type="submit" >
+        </div>
+    {% endfor %}
+{% endblock %}
+
+{% block name %}
+{{ name }}
+{% endblock %}
+
+{% block getname %}
+    {{ get_name }}
+{% endblock %}
+
+{% block textarea_code %}{{ rb }}{% endblock %}
+
+{% block compile_otp %}
+    {{ comp_outp }}
+{% endblock %}

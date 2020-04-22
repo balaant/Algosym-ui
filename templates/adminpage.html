@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="/static/style/adminpagestyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="pg-opt-all">
+            <nav class="adm-nav">
+                <div class="adm-st">
+                    <a href="#">Управление системой</a>
+                </div>
+                <div class="adm-bd">
+                    <a href="/mainPage/storage">Управление хранилищем</a>
+                </div>
+            </nav>
+            <form class="reg-opt" value="" method="post">
+            <div class="reg-new-user-fr">
+                <label for="reg-new-user">Регистрация новых пользователей</label>
+                <button class="btn-flag" name = "new_reg" type="submit">{% block mode %}{% endblock %}</button>
+            </div>
+            <div class="add-change-fr">
+                <label for="add-change">Внесение изменений в хранилище</label>
+                <button class="btn-flag" name = "change_stored" type="submit">{% block change %}{% endblock %}</button>
+            </div>
+            </form>
+    </div>
+    </body>
+    <script type="text/javascript" src="/static/node_modules/jquery/dist/jquery.min.js"></script>
+</html>

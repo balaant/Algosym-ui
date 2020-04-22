@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" type="text/css" href="/static/style/pagestyle.css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <div class="nav-space">
+            <span id="MHJavaCode">MHJavaCode</span>
+            <div class="alg-nav">
+                <div class="alg-nav-li">
+                    <div class="alg">
+                            <form action="" method="get" >
+                        {% block content  %}
+                        {% endblock %}
+                            </form>
+                        <form action="" method="post" >
+                            <button id="add-alg" name ="new_one" value="add" type="submit">Создать</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="current-user-disp">
+                <p id="current-user"><img src="/static/image/persone.png"><span>{% block name %}{% endblock %}
+                </span></p>
+            </div>
+        </div>
+        <div class="workspace">
+            <div class="selected-alg-action">
+                <form action="" method="post" >
+                    <img src="/static/image/b-alg.png"><input id="alg-name" value="{% block getname %}{% endblock %}" name="alg_name_top" type="text">
+                    <button class="play-btn" name="compile_code" type="submit"><img src="/static/image/play.png"></button>
+                    <input id="delet-alg" name = "deleteAlg" value="Delete" type="submit">
+                    <input id="logout" name = "logoutAlg" value="Logout" type="submit">
+                    <input id="save-alg" name = "saveAlg" value="Save" type="submit" >
+                    <textarea class="input-code" maxlength="300" name="code_area_blog">{% block textarea_code %}{% endblock %}</textarea>
+                    </form>
+                        <textarea disabled class="log-output" name="compile" value="">
+                            {% block compile_otp %}{% endblock %}
+                        </textarea>
+            </div>
+        </div>
+    </body>
+</html>

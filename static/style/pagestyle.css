@@ -1,0 +1,360 @@
+body{
+    width: 100%;
+    height: 100%;
+    min-height: 600px;
+    min-width: 900px;
+    margin: 0;
+    background-color:#2E2E36;
+}
+.nav-space{
+    position: relative;
+    width: 412px;
+    height: 100%;
+    min-height: 750px;
+    flex-direction: column;
+
+    background-color: #33323E;
+}
+
+#MHJavaCode{
+    position: relative;
+    width: 312px;
+    height: 97px;
+    left: 38px;
+    top: 7px;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 42px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    color: #FFFFFF;
+}
+
+.alg-nav, frame{
+    display: flex;
+    position: relative;
+    width: 312px;
+    height: 400px;
+    left: 38px;
+
+    background: #403E4F;
+    border-radius: 10px;
+    overflow: auto;
+}
+
+.alg-nav-li{
+    position: relative;
+    width: 267px;
+    height: 382px;
+    top:9px;
+    left:15px;
+}
+.slider-1{
+    position: relative;
+    width: 30px;
+    height: 400px;
+    
+}
+#wheal-1{
+    position: absolute;
+    width: 30px;
+    height: 70px;
+    top:9px;
+    left: 15px;
+
+    background: #37373A;
+    border: 1px solid #DADAE1;
+    box-sizing: border-box;
+    border-radius: 15px;
+}
+#way-1{
+    position: relative;
+    width: 12px;
+    height:382px;
+    left: 24px;
+    top: 9px;
+
+    background: #313134;
+    border-radius: 10px;
+}  
+.alg{
+    overflow: auto;
+}
+
+ .alg-sp {
+    position: relative;
+    display: flex;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    align-items: center;
+    margin-top: 0px;
+    margin-right: 10px;
+    margin-bottom: 17px;
+    color: #ABABC1;
+}
+
+#add-alg button{
+    position: relative;
+    padding-left: 15px;
+    display: flex;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 17px;
+    color:  #ABABC1;
+    background-color: #403E4F;
+    border: none;
+    outline: none;
+}
+
+.current-user-disp{
+    margin-top: 150px;
+    position: relative;
+    display: flex;
+}
+#current-user{
+    position: relative;
+    left: 38px;
+}
+#current-user span{
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 28px;
+    padding-left: 11px;
+    color: #FFFFFF;
+
+}
+
+.workspace{
+    position: absolute;
+    top: 0px;
+    left: 412px;
+    width:calc( 100% - 412px );
+    height: auto;
+    background-color:#2E2E36;
+}
+
+.selected-alg-action{
+    position: relative;
+    min-width: 900px;
+    height: 50px;
+    margin-top: 32px;
+}
+
+.selected-alg-action form{
+    position: relative;
+
+}
+
+.selected-alg-action img{
+    position: relative;
+    padding-left: 20px;
+    vertical-align: middle;
+    top:-5px
+
+}
+
+#alg{
+    padding-left: 10px;
+    background-color: #403E4F;
+    border: none;
+}
+
+.selected-alg-action #alg-name{
+    position: relative;
+    width: 345px;
+    height: 50px;
+    top:0px;   
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 36px;
+    color: #ABABC1;
+    background-color: #2E2E36;
+    border: none;
+    outline: none;
+}
+
+.play-btn{
+    position: absolute;
+    top: 7px;
+    left: 480px;
+    padding: 0px;
+    width:40px;
+    background-color: #2E2E36;
+}
+
+
+
+#save-alg{
+    position: absolute;
+    right: 300px;
+    width: 250px;
+    height: 50px; 
+    display: inline-block;
+    background: #41B09C;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    align-items: center;
+    text-align: center;
+
+    color: #C1F0E8;
+
+}
+
+#delet-alg{
+    position: absolute;
+    right: 26px;
+    width: 250px;
+    height: 50px; 
+    display: inline-block;
+
+
+    background: #CA8181;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    align-items: center;
+    text-align: center;
+    
+    color: #FEC8C8;
+}
+
+#logout{
+    position: absolute;
+    top: 520px;
+    left:-340px;
+    width: 250px;
+    height: 50px;
+    display: inline-block;
+
+
+    background: #CA8181;
+    border-radius: 50px;
+    border: none;
+    outline: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    align-items: center;
+    text-align: center;
+
+    color: #FEC8C8;
+}
+
+.input-code{
+    position: absolute;
+    height: 380px;
+    width: calc(100% - 100px);
+    top:100px;
+    left: 25px;
+    padding:25px;
+
+    background: #44434F;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    overflow: auto;
+    resize: none;
+    color:#FFFFFF;
+}
+::-webkit-scrollbar{
+    width: 30px;
+}
+.alg-nav::-webkit-scrollbar-track{
+    width: 12px;
+    background:  #403E4F;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-track{
+    width: 12px;
+    background:  #44434F;
+    border-radius: 10px;
+}
+::-webkit-scrollbar-thumb{
+    width:30px;
+    border-radius: 15px;
+    background: #37373A;
+    border: 1px solid #DADAE1;
+}
+
+.log-output{
+    position: absolute;
+    height: 100px;
+    width: calc(100% - 100px);
+    top: 560px;
+    left: 24px;
+    padding: 25px;
+    background: #44434F;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    overflow: auto;
+    resize: none;
+    color:#FFFFFF;
+}
+.alg-selected{
+    background-color: rgba(196, 196, 196, 0.11);
+}
+
+#add-alg form,button{
+    position: relative;
+    padding-left: 15px;
+    display: flex;
+    font-family: Roboto, serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 33px;
+    align-items: center;
+    margin-top: 0px;
+    margin-bottom: 17px;
+    color: #ABABC1;
+    background-color: #403E4F;
+    border: none;
+    outline: none;
+}
+

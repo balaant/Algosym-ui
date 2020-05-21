@@ -16,8 +16,8 @@ app.config['STORMPATH_REGISTRATION_TEMPLATE'] = 'reg.html'
 app.config['STORMPATH_LOGIN_TEMPLATE'] = 'login.html'
 
 
-parent_dir = r"C:\work\best_hack2020\users_files"
-bin_parent_dir = r"C:\work\best_hack2020\users_files_bin"
+parent_dir = os.getcwd()+r"/users_files"
+bin_parent_dir = os.getcwd()+r"/users_files_bin"
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'java'}
 
 
@@ -151,7 +151,7 @@ def main_page():
                         get_info = request.form.get("code_area_blog")
                         # print(request.form.get("alg_name_top"))
                         # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                        save_file(path=parent_dir + f"\\{md5_login}\\{str(request.form.get('alg_name_top')).replace(' ', '')}")
+                        save_file(path=parent_dir + f"/{md5_login}/{str(request.form.get('alg_name_top')).replace(' ', '')}")
                         return redirect(f"/mainPage?{request.query_string.decode()}")
                     elif "deleteAlg" in request.form:
                         del_alg(md5_login=md5_login, file=alg_name)
@@ -168,8 +168,8 @@ def main_page():
                         save_bin_file_to_user_bin_dir(md5login=md5_login, filename=alg_name)
                         compile_output = run_saved_bin_and_delete(md5_login)
                         if alg_name is not None:
-                            readed_bytes = read_existed_file(path=parent_dir + f"\\{md5_login}\\{alg_name}")
-                        return render_template("algorithm_template.html", ld=os.listdir(parent_dir + f"\\{md5_login}"),
+                            readed_bytes = read_existed_file(path=parent_dir + f"/{md5_login}/{alg_name}")
+                        return render_template("algorithm_template.html", ld=os.listdir(parent_dir + f"/{md5_login}"),
                                                name=session['login'],
                                                get_name=alg_name,
                                                rb=readed_bytes,
@@ -179,11 +179,11 @@ def main_page():
                 try:
                     if alg_name is not None:
                         if alg_name in request.query_string.decode():
-                            readed_bytes = read_existed_file(path=parent_dir + f"\\{md5_login}\\{alg_name}")
+                            readed_bytes = read_existed_file(path=parent_dir + f"/{md5_login}/{alg_name}")
                 except Exception:
                     return redirect("/mainPage")
 
-            return render_template("algorithm_template.html", ld=os.listdir(parent_dir + f"\\{md5_login}"),
+            return render_template("algorithm_template.html", ld=os.listdir(parent_dir + f"/{md5_login}"),
                                    name=session['login'],
                                    get_name=alg_name,
                                    rb=readed_bytes)
@@ -259,12 +259,12 @@ def store_settings():
                     md5_login_user = hashlib.md5(b"%b" % bytes(unquote(str(request.query_string.decode()).split("=")[1]), "utf-8")).hexdigest()
                     check_for_exist(md5_login=md5_login_user)
                     return render_template("admin_storage_template.html", render_login=get_all_logins,
-                                           ld=os.listdir(parent_dir + f"\\{md5_login}"))
+                                           ld=os.listdir(parent_dir + f"/{md5_login}"))
                 else:
                     print(unquote(str(request.query_string.decode()).split("=")[1]))
-                    rf = read_existed_file(path=parent_dir + f"\\{md5_login_user}" + f"\\{unquote(str(request.query_string.decode()).split('=')[1])}")
+                    rf = read_existed_file(path=parent_dir + f"/{md5_login_user}" + f"/{unquote(str(request.query_string.decode()).split('=')[1])}")
                     return render_template("admin_storage_template.html", render_login=get_all_logins,
-                                                   ld=os.listdir(parent_dir + f"\\{md5_login_user}"),
+                                                   ld=os.listdir(parent_dir + f"/{md5_login_user}"),
                                                    read_file=rf,
                                                     fname = unquote(str(request.query_string.decode()).split("=")[1]))
             except Exception:
@@ -274,7 +274,7 @@ def store_settings():
                 try:
                     del_alg(md5_login=md5_login_user, file= unquote(str(request.query_string.decode()).split("=")[1]))
                     return render_template("admin_storage_template.html", render_login=get_all_logins,
-                                           ld=os.listdir(parent_dir + f"\\{md5_login_user}"))
+                                           ld=os.listdir(parent_dir + f"/{md5_login_user}"))
                 except Exception:
                     pass
         return render_template("admin_storage_template.html", render_login = get_all_logins)
@@ -339,8 +339,8 @@ def save_file(path):
 
 def save_bin_file_to_user_bin_dir(md5login, filename):
     try:
-        bin_path = bin_parent_dir + f"\\{md5login}"
-        filepath = parent_dir + f"\\{md5login}" + f"\\{filename}"
+        bin_path = bin_parent_dir + f"/{md5login}"
+        filepath = parent_dir + f"/{md5login}" + f"/{filename}"
         subprocess.call(f"javac -d {bin_path} {filepath}", shell=True)
     except Exception:
         pass
@@ -348,11 +348,11 @@ def save_bin_file_to_user_bin_dir(md5login, filename):
 
 def run_saved_bin_and_delete(md5login):
     try:
-        filename = os.listdir(bin_parent_dir + f"\\{md5login}")[0]
-        stated_path = bin_parent_dir + f"\\{md5login}"
+        filename = os.listdir(bin_parent_dir + f"/{md5login}")[0]
+        stated_path = bin_parent_dir + f"/{md5login}"
         os.chdir(stated_path)
         scal = subprocess.check_output(f"java {str(filename).replace('.class', '')}", shell=True)
-        os.remove(stated_path + f"\\{filename}")
+        os.remove(stated_path + f"/{filename}")
         return scal.decode()
     except Exception:
         return "[-] Error!"

@@ -30,15 +30,34 @@
                 <form action="" method="post" >
                     <img src="/static/image/b-alg.png"><input id="alg-name" value="{% block getname %}{% endblock %}" name="alg_name_top" type="text">
                     <button class="play-btn" name="compile_code" type="submit"><img src="/static/image/play.png"></button>
-                    <input id="delet-alg" name = "deleteAlg" value="Delete" type="submit">
-                    <input id="logout" name = "logoutAlg" value="Logout" type="submit">
-                    <input id="save-alg" name = "saveAlg" value="Save" type="submit" >
-                    <textarea class="input-code" maxlength="300" name="code_area_blog">{% block textarea_code %}{% endblock %}</textarea>
-                    </form>
-                        <textarea disabled class="log-output" name="compile" value="">
-                            {% block compile_otp %}{% endblock %}
-                        </textarea>
+                    <input id="delet-alg" name="deleteAlg" value="Delete" type="submit">
+                    <input id="logout" name="logoutAlg" value="Logout" type="submit">
+                    <input id="save-alg" name="saveAlg" value="Save" type="submit" >
+                    <input type="hidden" name="code_area_blog">
+                    {% if 0 %}
+                    <textarea id="editor" class="input-code" maxlength="300" name="code_area_blog">
+                        {% block textarea_code1 %}{% endblock %}
+                    </textarea>
+                    {% endif %}
+                    <div id="editor" class="input-code">{% block textarea_code %}{% endblock %}</div>
+                </form>
+                <textarea disabled class="log-output" name="compile" value="">
+                    {% block compile_otp %}{% endblock %}
+                </textarea>
             </div>
         </div>
+<script type="text/javascript" src="/static/node_modules/jquery/dist/jquery.min.js"></script>
+<script src="/static/ace/ace.js" type="text/javascript" charset="utf-8"></script>
+<script>
+    var editor = ace.edit("editor");
+    editor.setTheme("ace/theme/monokai");
+    editor.session.setMode("ace/mode/java");
+    editor.session.setUseSoftTabs(true);
+    $(function() {
+        $("#save-alg").click(function() {
+            $('input[name="code_area_blog"]').val(editor.getValue());
+        });
+    });
+</script>
     </body>
 </html>

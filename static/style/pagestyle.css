@@ -203,6 +203,7 @@ body{
 
 #save-alg{
     position: absolute;
+    top: 40px;
     right: 300px;
     width: 250px;
     height: 50px; 
@@ -226,6 +227,7 @@ body{
 
 #delet-alg{
     position: absolute;
+    top: 40px;
     right: 26px;
     width: 250px;
     height: 50px; 
@@ -286,7 +288,7 @@ body{
     outline: none;
     border: none;
 
-    font-family: Roboto;
+    font-family: monospace;
     font-style: normal;
     font-weight: normal;
     font-size: 28px;

@@ -16,8 +16,8 @@ app.config['STORMPATH_REGISTRATION_TEMPLATE'] = 'reg.html'
 app.config['STORMPATH_LOGIN_TEMPLATE'] = 'login.html'
 
 
-parent_dir = os.getcwd()+r"/users_files"
-bin_parent_dir = os.getcwd()+r"/users_files_bin"
+parent_dir = os.getcwd() + r"/users_files"
+bin_parent_dir = os.getcwd() + r"/users_files_bin"
 ALLOWED_EXTENSIONS = {'txt', 'pdf', 'png', 'jpg', 'jpeg', 'gif', 'java'}
 
 
@@ -120,75 +120,76 @@ def main_page():
     inf = cursor.fetchall()[0]
     print(inf)
     if 'user' in inf:
-        if session.get("authenticated", None) is not None and session.get("authenticated", None) is not False:
-            # print(session.get("authenticated", None))
-
-            if 'visits' not in session:
-                session['visits'] = 0
-
-            md5_login = hashlib.md5(b"%b" % bytes(session['login'], "utf-8")).hexdigest()
-            readed_bytes = ""
-            alg_name = None
-            check_for_exist(md5_login=md5_login)
-
-            if request.query_string.decode():
-                alg_name = str(request.query_string.decode()).split("=")[1]
-                # print(alg_name)
-
-            if request.method == "POST":
-                cursor.execute("""
-                    SELECT create_new_files FROM bhacklogins
-                    """)
-                inf = cursor.fetchone()
-                if 0 in inf:
-                    if "logoutAlg" in request.form:
-                        session.clear()
-                        return redirect("/")
-                    else:
-                        return redirect("/mainPage")
-                elif 1 in inf:
-                    if "saveAlg" in request.form:
-                        get_info = request.form.get("code_area_blog")
-                        # print(request.form.get("alg_name_top"))
-                        # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
-                        save_file(path=parent_dir + f"/{md5_login}/{str(request.form.get('alg_name_top')).replace(' ', '')}")
-                        return redirect(f"/mainPage?{request.query_string.decode()}")
-                    elif "deleteAlg" in request.form:
-                        del_alg(md5_login=md5_login, file=alg_name)
-                        session.update()
-                        return redirect("/mainPage")
-                    elif "new_one" in request.form:
-                        session['visits'] = session.get('visits') + 1
-                        check_for_exist(md5_login=md5_login)
-                        create_file(session['visits'], path = os.path.join(parent_dir, md5_login))
-                    elif "logoutAlg" in request.form:
-                        session.clear()
-                        return redirect("/")
-                    elif "compile_code" in request.form:
-                        save_bin_file_to_user_bin_dir(md5login=md5_login, filename=alg_name)
-                        compile_output = run_saved_bin_and_delete(md5_login)
-                        if alg_name is not None:
-                            readed_bytes = read_existed_file(path=parent_dir + f"/{md5_login}/{alg_name}")
-                        return render_template("algorithm_template.html", ld=os.listdir(parent_dir + f"/{md5_login}"),
-                                               name=session['login'],
-                                               get_name=alg_name,
-                                               rb=readed_bytes,
-                                               comp_outp=compile_output)
-
-            elif request.method == "GET":
-                try:
-                    if alg_name is not None:
-                        if alg_name in request.query_string.decode():
-                            readed_bytes = read_existed_file(path=parent_dir + f"/{md5_login}/{alg_name}")
-                except Exception:
-                    return redirect("/mainPage")
-
-            return render_template("algorithm_template.html", ld=os.listdir(parent_dir + f"/{md5_login}"),
-                                   name=session['login'],
-                                   get_name=alg_name,
-                                   rb=readed_bytes)
-        else:
+        is_authenticated = session.get("authenticated")
+        if not is_authenticated:
             return redirect("/login")
+
+        if 'visits' not in session:
+            session['visits'] = 0
+
+        md5_login = hashlib.md5(b"%b" % bytes(session['login'], "utf-8")).hexdigest()
+        readed_bytes = ""
+        alg_name = None
+        check_for_exist(md5_login=md5_login)
+
+        query_string = request.query_string.decode()
+
+        if query_string:
+            alg_name = str(query_string).split("=")[1]
+            # print(alg_name)
+
+        if request.method == "POST":
+            cursor.execute("""
+                SELECT create_new_files FROM bhacklogins
+                """)
+            inf = cursor.fetchone()
+            if 0 in inf:
+                if "logoutAlg" in request.form:
+                    session.clear()
+                    return redirect("/")
+                else:
+                    return redirect("/mainPage")
+            elif 1 in inf:
+                if "saveAlg" in request.form:
+                    get_info = request.form.get("code_area_blog")
+                    # print(request.form.get("alg_name_top"))
+                    # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+                    save_file(path=parent_dir + f"/{md5_login}/{str(request.form.get('alg_name_top')).replace(' ', '')}")
+                    return redirect(f"/mainPage?{query_string}")
+                elif "deleteAlg" in request.form:
+                    del_alg(md5_login=md5_login, file=alg_name)
+                    session.update()
+                    return redirect("/mainPage")
+                elif "new_one" in request.form:
+                    session['visits'] = session.get('visits') + 1
+                    check_for_exist(md5_login=md5_login)
+                    create_file(session['visits'], path = os.path.join(parent_dir, md5_login))
+                elif "logoutAlg" in request.form:
+                    session.clear()
+                    return redirect("/")
+                elif "compile_code" in request.form:
+                    save_bin_file_to_user_bin_dir(md5login=md5_login, filename=alg_name)
+                    compile_output = run_saved_bin_and_delete(md5_login)
+                    if alg_name is not None:
+                        readed_bytes = read_existed_file(path=parent_dir + f"/{md5_login}/{alg_name}")
+                    return render_template("algorithm_template.html", ld=os.listdir(parent_dir + f"/{md5_login}"),
+                                           name=session['login'],
+                                           get_name=alg_name,
+                                           rb=readed_bytes,
+                                           comp_outp=compile_output)
+
+        elif request.method == "GET":
+            try:
+                if alg_name is not None:
+                    if alg_name in query_string:
+                        readed_bytes = read_existed_file(path=parent_dir + f"/{md5_login}/{alg_name}")
+            except Exception:
+                return redirect("/mainPage")
+
+        return render_template("algorithm_template.html", ld=os.listdir(parent_dir + f"/{md5_login}"),
+                               name=session['login'],
+                               get_name=alg_name,
+                               rb=readed_bytes)
 
     elif "admin" in inf:
         cursor.execute("""
@@ -319,8 +320,7 @@ def del_alg(md5_login, file):
 def read_existed_file(path):
     try:
         with open(path) as file:
-            readed_bytes = file.read().replace('\n','')
-            print(readed_bytes)
+            readed_bytes = file.read()
         return readed_bytes
     except Exception:
         raise
